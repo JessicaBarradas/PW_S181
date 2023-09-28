@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/FORMS', function () {
@@ -21,8 +21,8 @@ Route::get('/FORMS', function () {
 });
 Route::get('/RECUERDOS', function () {
     return view('Recuerdos');
-});
+});*/
 
-/*Route::view('/', 'welcome');
-Route::view('/FORM', 'formulario');
-Route::view('/RECUERDOS', 'recuerdos');*/
+Route::view('/', 'welcome')-> name('apodoInicio');
+Route::view('/FORM', 'formulario')->name('apodoFormulario');
+Route::view('/RECUERDOS', 'recuerdos')->name('apodoRecuerdos');
