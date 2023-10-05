@@ -9,7 +9,8 @@
 </head>
 <body>
 @yield('Contenido')
-@include('partials.Forms')
+@include('partials.Boton')
+@include('partials.Card')
 @include('partials.breadcrumb')
 </body>
 </html>

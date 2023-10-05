@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Login');
 });
-Route::view('/BP', 'BP');
+Route::view('/BP', 'BP')-> name('apodoBusqueda');
 
